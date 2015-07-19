@@ -6,7 +6,7 @@
 # catalog-version 2.1d
 Name:		texlive-titling
 Version:	2.1d
-Release:	10
+Release:	11
 Summary:	Control over the typesetting of the \maketitle command
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/titling
