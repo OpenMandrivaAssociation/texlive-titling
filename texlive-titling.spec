@@ -1,19 +1,13 @@
-# revision 15878
-# category Package
-# catalog-ctan /macros/latex/contrib/titling
-# catalog-date 2012-07-24 20:02:06 +0200
-# catalog-license lppl
-# catalog-version 2.1d
 Name:		texlive-titling
-Version:	2.1d
-Release:	12
+Version:	15878
+Release:	1
 Summary:	Control over the typesetting of the \maketitle command
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/titling
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/titling.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/titling.doc.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/titling.source.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/titling.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/titling.doc.r%{version}.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/titling.source.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -28,12 +22,12 @@ elements can be added and a titlepage title can be centered on
 a physical page.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -46,7 +40,8 @@ a physical page.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1 -a2
+%setup -c -a1 -a2
+%autopatch -p1
 
 %build
 
