@@ -1,6 +1,6 @@
 Name:		texlive-titling
 Version:	15878
-Release:	1
+Release:	2
 Summary:	Control over the typesetting of the \maketitle command
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/titling
