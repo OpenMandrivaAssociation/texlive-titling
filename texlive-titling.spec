@@ -3,7 +3,7 @@ Version:	15878
 Release:	2
 Summary:	Control over the typesetting of the \maketitle command
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/titling
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/titling
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/titling.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/titling.doc.r%{version}.tar.xz
